@@ -10,14 +10,15 @@
     parkhaus_frei = False
 
     # Priorität mit If,Elif,Else von oben nach unten..
-    # Parkhaus gesperrt.. 
+    # Hier wird rein die Logik ausgeführt. Logik und Ausgabe sollten immer von einander getrennt sein..
     if eingang_frei == False or ausgang_frei == False or vermietet == True:
+        # Parkhaus ist gesperrt.. 
         parkhaus_gesperrt = True
-    # Parkhaus belegt
     elif auslastung < anzahl_parkplaetze_belegt:
+        # Parkhaus ist belegt
         parkhaus_belegt = True
-    # Parkhaus frei
     else:
+        # Parkhaus ist frei
         parkhaus_frei = True
 
     # Einfache Abfrage und Ausgabe für den aktuellen Status
