@@ -35,9 +35,11 @@ def main():
     status_anzeigen(200, False, True, False)    #Einfahrt blockiert
     status_anzeigen(200, True, False, False)    #Ausfahrt blockiert
     status_anzeigen(200, False, False, True)    #für Veranstaltung angemietet
+
     status_anzeigen(200, True, True, False)     #frei
 
     status_anzeigen(475, True, True, False)     #Auslastung genau 95%.. 
+    status_anzeigen(476, True, True, False)     #Auslastung über 95%.. 
     status_anzeigen(476, False, True, False)    #Auslastung über 95% und Einfahrt blockiert
     status_anzeigen(476, True, False, False)    #Auslastung über 95% und Ausfahrt blockiert
     status_anzeigen(476, True, True, True)      #Auslastung über 95% und für Veranstaltung angemietet
