@@ -12,7 +12,7 @@
 
 inches = 0.0
 
-def GetInputInch():
+def GetInputAsInch():
    global inches
    inputInches = input("Angabe in Inch:\n") # Eingabe von Inch
    inputInches = inputInches.replace(",", ".") # , mit . ersetzen
@@ -24,8 +24,8 @@ def GetInputInch():
 
 def main():
     global inches
-    while GetInputInch() != 0:
-        cm = inches * 2.54
+    while GetInputAsInch() != 0:
+        cm = inches * 2.54 #die Berechnung könnte auch ausgelagert werden in eine eigene Funktion... aber für eine Zeile macht es keinen Sinn 3 Zeilen zu schreiben... Faulheit und so..
         #print("Deine Eingabe von \"" + str(inches) + "\" ergibt: " + str(cm) + "cm").... als fstring schöner:
         print(f"Deine Eingabe von \"{str(inches)}\" ergibt: {str(cm)} cm")
 
