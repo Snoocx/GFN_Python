@@ -1,4 +1,4 @@
-﻿def status_anzeigen(anzahl_parkplaetze_belegt, eingang_frei, ausgang_frei, vermietet):
+﻿def status_anzeigen (anzahl_parkplaetze_belegt, eingang_frei, ausgang_frei, vermietet):
     
     # Ausgangswerte
     parkplaetze_gesamt = 500
@@ -29,7 +29,8 @@
         print("Parkhaus gesperrt")
         
 
-def main():
+
+def main ():
     status_anzeigen(330, True, True, False)     #Beispiel aus Aufgabe
 
     status_anzeigen(200, False, True, False)    #Einfahrt blockiert
