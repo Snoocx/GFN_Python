@@ -7,8 +7,7 @@ c = a + b
 
 print("Was ist das Ergebnis aus ", a ," + ", b )
 
-input = input()
-zahl = int(input)
+zahl = int(input())
 
 if zahl == c:
     print(zahl, "ist richtig")

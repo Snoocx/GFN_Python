@@ -1,5 +1,4 @@
-﻿
-#Schreiben Sie ein Programm, das den Anwender wie-
+﻿#Schreiben Sie ein Programm, das den Anwender wie-
 #derholt dazu auffordert, einen Wert in Inch einzugeben. Der eingegebene Wert soll in Zentimeter umgerechnet und ausgegeben wer-
 #den. 
 #Das Programm soll nach der Eingabe des Werts 0 beendet werden.
