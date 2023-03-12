@@ -30,7 +30,6 @@
         print("Parkhaus gesperrt")
         
 
-
 def main ():
     status_anzeigen(330, True, True, False)     #Beispiel aus Aufgabe
 
