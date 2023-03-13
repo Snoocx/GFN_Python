@@ -10,11 +10,9 @@ def CheckIfYearIsLeapYear(year):
 
     if year % 4 == 0 and year % 100 != 0:
         isLeapYear = True
-
-    if year % 100 == 0 and year % 400 != 0:
+    elif year % 100 == 0 and year % 400 != 0:
         isLeapYear = False
-
-    if year % 400 == 0:
+    elif year % 400 == 0:
         isLeapYear = True
 
     return isLeapYear
