@@ -10,7 +10,7 @@ def GetInputAsYear():
     try:
         year = int(input("Bitte Jahr eingeben:\n"))
     except:
-        year = GetInputAsYear() # Rekursion
+        GetInputAsYear() # Rekursion
 
     return year 
 
