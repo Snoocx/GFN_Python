@@ -6,7 +6,13 @@
 # oder durch 400 teilbar ist
 
 def GetInputAsYear():
-    return int(input("Bitte Jahr eingeben:\n"))
+    year = None
+    try:
+        year = int(input("Bitte Jahr eingeben:\n"))
+    except:
+        year = GetInputAsYear() # Rekursion
+
+    return year 
 
 def CheckIfYearIsLeapYear(year):
     #if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
