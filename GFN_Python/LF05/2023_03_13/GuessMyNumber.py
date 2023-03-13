@@ -5,9 +5,8 @@ def GetInputAsInt():
     try:
         guessed = int(input("Dein Rateversuch:\n"))
     except:
-        guessed = int(input("Dein Rateversuch:\n"))
+        GetInputAsInt()
     return guessed
-
 
 def GuessingLoop():
     numberToGuess = random.randint(1,6)
@@ -20,5 +19,4 @@ def GuessingLoop():
     return countGuessed
 
 countGuessed = GuessingLoop()
-
 print(f"Du hast beim {countGuessed}. Versuch die Zahl richtig erraten")
