@@ -9,7 +9,7 @@
        exit()                                       # Beenden des Programms
    else:
        return revenue                               # Zurückgeben von der Eingabe als Float
-       
+
 
 def CalculateBillingAmountFromRevenue(revenue):
     if revenue >= 500:                                  # Ab einem Umsatz von 500 wird..
