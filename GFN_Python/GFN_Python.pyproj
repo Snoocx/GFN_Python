@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2f4ab251-c8cf-4942-9632-e88ecf6762db</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>LF05\2023_03_13\Schaltjahr.py</StartupFile>
+    <StartupFile>LF05\2023_03_13\GuessMyNumber.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,6 +35,7 @@
     <Compile Include="LF05\2023_03_10\Parkhaus.py" />
     <Compile Include="LF05\2023_03_10\Syntaxfehler.py" />
     <Compile Include="LF05\2023_03_09\Performancetest.py" />
+    <Compile Include="LF05\2023_03_13\GuessMyNumber.py" />
     <Compile Include="LF05\2023_03_13\RechnungsbetragRabatt.py" />
     <Compile Include="LF05\2023_03_13\Schaltjahr.py" />
   </ItemGroup>
