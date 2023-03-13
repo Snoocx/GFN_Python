@@ -1,7 +1,15 @@
 ﻿def GetInputAsRevenue():
-   revenueString = input("Wie hoch war der Umsatz?\n")  # Eingabe von Umsatz
-   revenueString = revenueString.replace(",", ".")      # , mit . ersetzen
-   return float(revenueString)                          # Zurückgeben von der Eingabe als Float
+   revenue = input("Wie hoch war der Umsatz?\n")  # Eingabe von Umsatz
+   revenue = revenue.replace(",", ".")            # , mit . ersetzen
+
+   try:                                             # Überprüfe mit Try ob der eingegebene Wert in Float umgewandelt werden kann:
+      revenue = float(revenue)                      # Umwandlung von String zu Float
+   except ValueError:
+       print("Bitte nur Zahlen eingeben!")          # Ausgabe falls keine Zahl eingegeben wurde
+       exit()                                       # Beenden des Programms
+   else:
+       return revenue                               # Zurückgeben von der Eingabe als Float
+       
 
 def CalculateBillingAmountFromRevenue(revenue):
     if revenue >= 500:                                  # Ab einem Umsatz von 500 wird..
@@ -13,7 +21,7 @@ def CalculateBillingAmountFromRevenue(revenue):
     return revenue * ( 1 - discount / 100 )             # Berechnung und Rückgabe des Rechnungsbetrages
 
 def main():
-    revenue = GetInputAsRevenue()                       # Funktionsaufruf ^ hier wird der Umsatz geholt und zugewiesen
+    revenue = GetInputAsRevenue()                               # Funktionsaufruf ^ hier wird der Umsatz geholt und zugewiesen
     billingAmount = CalculateBillingAmountFromRevenue(revenue)  # Funktionsaufruf, Umsatz wird mit übergeben ^ hier wird der Rechnungsbetrag ausgerechnet und zugewiesen
     print(f"Bei einem Umsatz von \"{str(revenue)} €\", ist der Rechnungsbetrag abzüglich des Rabattes: {str(billingAmount)} €") # Ausgabe
 
