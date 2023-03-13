@@ -9,17 +9,20 @@ def GetInputAsYear():
     return int(input("Bitte Jahr eingeben:\n"))
 
 def CheckIfYearIsLeapYear(year):
-    if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
-        return True
-    else:
-        return False
+    #if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+    #    return True
+    #else:
+    #    return False
+    return True if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0) else False
+
 
 def main():
     year = GetInputAsYear()                               
-    if CheckIfYearIsLeapYear(year):
-        print(f"{year} ist ein Schaltjahr") 
-    else:
-        print(f"{year} ist kein Schaltjahr") 
+    #if CheckIfYearIsLeapYear(year):
+    #    print(f"{year} ist ein Schaltjahr") 
+    #else:
+    #    print(f"{year} ist kein Schaltjahr") 
+    print(f"{year} ist ein Schaltjahr" if CheckIfYearIsLeapYear(year) else f"{year} ist kein Schaltjahr")
 
 while 1:
     main()
