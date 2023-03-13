@@ -5,10 +5,12 @@
 
 def CalculateBillingAmountFromRevenue(revenue):
     if revenue >= 500:
-        revenue = revenue * 0.9
+        discount = 10
     elif revenue >= 100:
-        revenue = revenue * 0.95
-    return revenue
+        discount = 5
+    else:
+        discount = 0
+    return revenue * ( 1 - discount / 100 )
 
 def main():
     revenue = GetInputAsRevenue()
