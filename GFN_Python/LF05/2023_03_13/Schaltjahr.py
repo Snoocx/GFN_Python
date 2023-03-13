@@ -2,19 +2,17 @@
 # Ist die Jahreszahl durch 100 teilbar, aber nicht durch 400, ist es kein Schaltjahr. 2100 wird kein Schaltjahr sein.
 # Ist die Jahreszahl durch 400 teilbar, dann ist es ein Schaltjahr. Deshalb war das Jahr 2000 ein Schaltjahr
 
+# Ist ein Schaltjahr, wenn das Jahr durch 4 und nicht durch 100 Teilbar
+# oder durch 400 teilbar ist
 
 def GetInputAsYear():
     return int(input("Bitte Jahr eingeben:\n"))
 
 def CheckIfYearIsLeapYear(year):
-    isLeapYear = False
-
-    if year % 4 == 0 and year % 100 != 0:
-        isLeapYear = True
-    elif year % 400 == 0:
-        isLeapYear = True
-
-    return isLeapYear
+    if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+        return True
+    else:
+        return False
 
 def main():
     year = GetInputAsYear()                               
@@ -23,4 +21,5 @@ def main():
     else:
         print(f"{year} ist kein Schaltjahr") 
 
-main()
+while 1:
+    main()
