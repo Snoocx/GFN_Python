@@ -10,7 +10,9 @@ def GetInputAsInt():
         if guessed > 6 or guessed < 1:      # Wenn die Zahl größer oder kleiner als der generierte Bereich ist
             raise Exception                 # soll die Eingabe wiederholt werden..
     except:
-        GetInputAsInt()
+       print("exception")
+       guessed = GetInputAsInt()
+
     return guessed
 
 def GuessingLoop():
@@ -18,6 +20,7 @@ def GuessingLoop():
     countGuessed = 1                        # der gezählte Wert wird auf 1 gesetzt, man startet mit dem ersten Versuch
 
     guessedNumber = GetInputAsInt()         # Funktionsaufruf ^ Eingabe wird auf guessedNumber gesetzt
+    print(guessedNumber)
     while guessedNumber != numberToGuess:   # Schleife wird solange wiederholen, bis man die richtige Zahl errät, ansonsten wird bei einem fehlgeschlagenen Versuch..
         countGuessed = countGuessed + 1     # ..der Counter um 1 erhöht
         guessedNumber = GetInputAsInt()     # ..und erneut nach einer Eingabe gefragt
