@@ -4,6 +4,8 @@ def GetInputAsInt():
     guessed = None
     try:
         guessed = int(input("Dein Rateversuch:\n"))
+        if guessed > 6 or guessed < 1:      # Wenn die Zahl größer oder kleiner als der generierte Bereich ist
+            raise Exception                 # soll die Eingabe wiederholt werden..
     except:
         GetInputAsInt()
     return guessed
@@ -18,5 +20,7 @@ def GuessingLoop():
         guessedNumber = GetInputAsInt()     # ..und erneut nach einer Eingabe gefragt
     return countGuessed                     # Sobald die richtige Zahl eingegeben wurde, wird der Counter zurückgegeben
 
+
+print("Errate eine Zahl zwischen 1-6...")
 countGuessed = GuessingLoop()               # Startet den Ratespaß und weißt das Ergebnis vom Counter der Variable zu
 print(f"Du hast beim {countGuessed}. Versuch die Zahl richtig erraten") 
