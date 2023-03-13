@@ -1,3 +1,6 @@
+# Aufgabenstellung:
+# Es soll eine Zahl von 1-6 generiert werden. Diese Zahl soll erraten werden. Die gebrauchten Versuche sollen am Ende ausgegeben werden.
+
 import random
 
 def GetInputAsInt():

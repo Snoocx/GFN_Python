@@ -1,7 +1,11 @@
-﻿# Ist die Jahreszahl durch vier teilbar, aber nicht durch 100, ist es ein Schaltjahr. 2008 fällt unter diese Regel.
+﻿# Aufgabenstellung:
+# Erstelle ein Programm, das zurückgibt ob das eingegebene Jahr ein Schaltjahr ist.
+
+# Ist die Jahreszahl durch vier teilbar, aber nicht durch 100, ist es ein Schaltjahr. 2008 fällt unter diese Regel.
 # Ist die Jahreszahl durch 100 teilbar, aber nicht durch 400, ist es kein Schaltjahr. 2100 wird kein Schaltjahr sein.
 # Ist die Jahreszahl durch 400 teilbar, dann ist es ein Schaltjahr. Deshalb war das Jahr 2000 ein Schaltjahr
 
+# Positiven Ausgänge
 # Ist ein Schaltjahr, wenn das Jahr durch 4 und nicht durch 100 Teilbar
 # oder durch 400 teilbar ist
 

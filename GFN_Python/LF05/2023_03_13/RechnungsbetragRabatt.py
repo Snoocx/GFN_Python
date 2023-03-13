@@ -1,4 +1,9 @@
-﻿def GetInputAsRevenue():
+﻿# Aufgabenstellung: 
+# Je nach Höhe des Umsatzes wird einem Kunden ein bestimmter Prozentsatz Rabatt gewährt.
+# Ab 100,-€ Umsatz bekommt ein Kunde 5% Rabatt. Ab 500,-€ Umsatz bekommt ein Kunde 10% Rabatt.
+# Das Programm soll den Rechnungsbetrag des Kunden abzüglich des Rabattes berechnen.
+
+def GetInputAsRevenue():
    revenue = input("Wie hoch war der Umsatz?\n")  # Eingabe von Umsatz
    revenue = revenue.replace(",", ".")            # , mit . ersetzen
 
