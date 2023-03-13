@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2f4ab251-c8cf-4942-9632-e88ecf6762db</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>LF05\2023_03_10\InchToCm_Alternative2.py</StartupFile>
+    <StartupFile>LF05\2023_03_13\RechnungsbetragRabatt.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,7 +27,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Extras\BinDezHexConverter.py" />
     <Compile Include="LF05\2023_03_08\Matheuebung.py" />
     <Compile Include="LF05\2023_03_10\Datenuebertragungszeit.py" />
     <Compile Include="LF05\2023_03_10\InchToCm_Alternative.py" />
@@ -36,6 +35,7 @@
     <Compile Include="LF05\2023_03_10\Parkhaus.py" />
     <Compile Include="LF05\2023_03_10\Syntaxfehler.py" />
     <Compile Include="LF05\2023_03_09\Performancetest.py" />
+    <Compile Include="LF05\2023_03_13\RechnungsbetragRabatt.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="LF05\2023_03_08\" />
@@ -43,6 +43,7 @@
     <Folder Include="LF05\2023_03_10\" />
     <Folder Include="LF05\" />
     <Folder Include="Extras\" />
+    <Folder Include="LF05\2023_03_13\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
